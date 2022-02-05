@@ -1025,7 +1025,7 @@
   border-radius: 0.25rem;
 }
 
-button.close {
+button.close, button.popin-dismiss {
   position: absolute;
   top: 0;
   right: 0;
@@ -1035,7 +1035,7 @@ button.close {
   font-size: 1.2em;
 }
 
-button.close:hover {
+button.close:hover, button.popin-dismiss:hover {
   opacity: 1;
   font-weight: bold;
 }
@@ -1297,6 +1297,7 @@ form > input, form > button, form > label {
   border-top: 1px solid #7c7c7c;
 }
 
+/***** TOOLTIP *****/
 .tooltip {
   position: relative;
 }
@@ -1340,7 +1341,27 @@ form > input, form > button, form > label {
           transform: translateX(calc(100% + 10px));
 }
 
-.tooltip:hover::after, .tooltip:hover::before {
+.tooltip:hover::after {
   display: block;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 /*# sourceMappingURL=all.css.map */

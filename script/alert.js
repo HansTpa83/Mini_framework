@@ -42,7 +42,7 @@ $(".reset").on("click", function (){
 
 
 $(document).on('click', '.close', function(event) {
-    var parent = $(event.target).parents(".alert");
+    var parent = $(event.target).parent();
     parent.remove();
 });
 
