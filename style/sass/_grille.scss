@@ -29,7 +29,10 @@
 .col-md-9, .col-md-10, .col-md-11, .col-md-12,
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, 
 .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
-.col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{
+.col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, 
+.col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8,
+.col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -38,7 +41,7 @@
 
 $nb_rows: 12;
 
-@for $i from 1 through 12 {
+@for $i from 1 through $nb_rows {
     .col-#{$i}{
         $size: $i / $nb_rows * 100%;
         width: $size;
@@ -46,9 +49,22 @@ $nb_rows: 12;
         max-width: #{$size};
     }
 }
+
+/***** XS *****/
+@media (min-width: 1px) {
+    @for $i from 1 through $nb_rows {
+        .col-xs-#{$i}{
+            $size: $i / $nb_rows * 100%;
+            width: $size;
+            flex: 0 0 #{$size};
+            max-width: #{$size};
+        }
+    }   
+}
+
 /***** SM *****/
 @media (min-width: 576px) {
-    @for $i from 1 through 12 {
+    @for $i from 1 through $nb_rows {
         .col-sm-#{$i}{
             $size: $i / $nb_rows * 100%;
             width: $size;
@@ -60,7 +76,7 @@ $nb_rows: 12;
 
 /***** MD *****/
 @media (min-width: 768px) {
-    @for $i from 1 through 12 {
+    @for $i from 1 through $nb_rows {
         .col-md-#{$i}{
             $size: $i / $nb_rows * 100%;
             width: $size;
@@ -72,7 +88,7 @@ $nb_rows: 12;
 
 /***** LG *****/
 @media (min-width: 992px) {
-    @for $i from 1 through 12 {
+    @for $i from 1 through $nb_rows {
         .col-lg-#{$i}{
             $size: $i / $nb_rows * 100%;
             width: $size;
@@ -84,7 +100,7 @@ $nb_rows: 12;
 
 /***** XL *****/
 @media (min-width: 1200px) {
-    @for $i from 1 through 12 {
+    @for $i from 1 through $nb_rows {
         .col-xl-#{$i}{
             $size: $i / $nb_rows * 100%;
             width: $size;
@@ -93,3 +109,5 @@ $nb_rows: 12;
         }
     }   
 }
+
+$taille: ("xs": 1px, "sm": 576px, "md": 768px, "lg": 992px, "xl": 1200px);

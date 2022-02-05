@@ -1,0 +1,5 @@
+@each $key, $value in $colors_value {
+    .bg-#{$key}{
+        background-color:map-get($colors_value, $key);
+    }
+}

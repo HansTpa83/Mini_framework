@@ -1,0 +1,39 @@
+/***** Visibilite *****/
+.visible {
+    visibility: visible !important;
+}
+.hidden {
+    visibility: hidden !important;
+}
+@media print{
+    .visible-print{
+        visibility: visible !important;
+    }
+    .hidden-print{
+        visibility: hidden !important;
+    }
+}
+
+$taille_max: ("xs": 576px, "sm": 768px, "md": 992px, "lg": 1200px);
+
+@each $key, $val in $taille {
+    @if($key == "xl"){
+        @media (min-width: $val){    
+            .visible-#{$key} {
+                visibility: visible !important;
+            }
+            .hidden-#{$key} {
+                visibility: hidden !important;
+            }
+        }
+    } @else{
+        @media (min-width: $val) and (max-width: map-get($taille_max, $key)){    
+            .visible-#{$key} {
+                visibility: visible !important;
+            }
+            .hidden-#{$key} {
+                visibility: hidden !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/****** ALL *****/
+body{
+    background-color: rgb(187, 187, 187);
+    margin: 0;
+    padding: 0;
+}
+section {
+    height: auto;
+    margin: 10vh;
+}
+h2, h3, .center{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.my{
+    margin: 2vh 0;
+}
+
+/****** SECTION GRILLE *****/
+.grille .row div {
+    text-align: center;
+    border: 1px solid black;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+/****** SECTION BTN *****/
+#sec-btn .row{
+    justify-content: center;
+}
+#sec-btn .row div {
+    margin: 0 1vw;
+}
+
+/****** SECTION IMG *****/
+#sect_img .row{
+    text-align: center;
+}
+#sect_img div{
+    border: none;
+    height: auto;
+    margin: 2vh 0;
+}
+
+/****** SECTION BG *****/
+#bg div {
+    height: 10vh;
+}
+
+/****** SECTION BG *****/
+#tooltip{
+    text-align: center;
+}

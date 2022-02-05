@@ -1,0 +1,23 @@
+$img_type: ("rounded": 0.50rem, "circle": 50%, "thumbnail": 0.50rem, "blur": 1.5rem);
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+@each $key, $value in $img_type {
+    .img-#{$key}{
+        @if $key == "thumbnail"{
+            padding: map-get($img_type, $key)#{"!important"};
+            background-color: rgb(24, 26, 27);
+            border-color: rgb(56, 61, 63);
+            border: 1px solid #dee2e6;
+        } @else if $key == "blur"{
+            filter: blur(map-get($img_type, $key));
+            &:hover{
+                filter: none;
+            }
+        } @else {
+            border-radius: map-get($img_type, $key)#{"!important"};
+        }
+        
+    }
+}
