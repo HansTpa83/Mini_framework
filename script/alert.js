@@ -49,4 +49,4 @@ $(document).on('click', '.close', function(event) {
 $(".btn-alert.btn").click(function (event){
     var color = print_alert(event);
     txt_alert(color);
-})
+});

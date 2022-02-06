@@ -1364,4 +1364,48 @@ form > input, form > button, form > label {
   border: 1px solid #888;
   width: 80%;
 }
+
+.tab-list {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.tab-list li {
+  padding: 0.75rem 0.5rem;
+  display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #ffffff;
+}
+
+.tab-list li:hover {
+  background-color: #555555;
+  color: white;
+  cursor: pointer;
+}
+
+.tab-list li button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.tab-pane {
+  height: auto;
+}
+
+.tab-content {
+  background-color: #555555;
+  color: white;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
 /*# sourceMappingURL=all.css.map */

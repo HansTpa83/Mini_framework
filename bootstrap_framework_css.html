@@ -10,6 +10,7 @@
     <script src="script/alert.js" defer></script>
     <script src="script/menu.js" defer></script>
     <script src="script/modal.js" defer></script>
+    <script src="script/tab.js"></script>
     <title>My Bootstrap</title>
 </head>
 <body>
@@ -325,6 +326,7 @@
             <div class="col-12 bg-warning hidden-sm">SM</div>
             <div class="col-12 bg-dark hidden-xs">XS</div>
             <div class="col-12 bg-secondary hidden-print">Print hidden</div>
+            <div class="col-12 bg-secondary visible-print">Print visible</div>
         </section>
 
         <section>
@@ -364,8 +366,34 @@
         </section>
 
         <section>
-            <h2>POPINS</h2>
-            
+            <h2 id="za">POPINS</h2>
+            <ul class="tab-list">
+                <li data-target="item01">item01</li>
+                <li data-target="item02">item02</li>
+                <li data-target="item03">item03</li>
+            </ul>
+
+            <div class="tab-pane">
+                <div class="tab-content" id="item01">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi culpa impedit ex et cumque commodi consectetur vitae sed! Doloribus odit veritatis, debitis eveniet facere atque consequatur eum amet nam beatae?
+                </div>
+                <div class="tab-content" id="item02">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit facere dolorem, maiores enim eligendi corporis explicabo esse repellat quod? Rerum quasi quam quaerat enim repellendus totam fugiat harum dicta?
+                    Sunt doloremque, deserunt, ut perspiciatis quis suscipit aut autem molestiae beatae fuga doloribus consectetur animi distinctio aperiam recusandae voluptatem voluptatibus! Eum eligendi possimus inventore culpa consectetur libero vitae delectus ut.
+                    Quos, culpa, facere, maxime quis dolore sapiente quod doloremque aspernatur itaque molestiae quasi sequi voluptate pariatur minus corrupti id sint facilis ratione ullam exercitationem. Praesentium temporibus quod explicabo vel repudiandae.                    
+                </div>
+                <div class="tab-content" id="item03">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic veniam, nulla, earum cum assumenda voluptate non et vero molestias magni ea totam. Ad ducimus rem eos, consectetur perferendis officia debitis!
+                    Distinctio deleniti iste maiores magni, aliquid perspiciatis dignissimos animi excepturi quam, esse cupiditate quia. Temporibus eius eum magni nam est. Quibusdam, dolorem eos! Repellendus, a nostrum iure fugit enim consequatur.
+                    Officia commodi, unde exercitationem delectus et assumenda quos reprehenderit, eaque, excepturi similique vel quaerat. Praesentium temporibus iusto quas, cum, laboriosam recusandae cupiditate, aut tempore dolorum dolor obcaecati vero id necessitatibus?
+                    Cupiditate impedit totam, voluptatem fugiat, nihil in officiis nemo suscipit saepe laborum eius odio iure nobis accusamus illo eveniet temporibus minus rem mollitia ipsam sed incidunt officia, doloribus maxime! Rem.
+                    Perferendis earum, officiis, nostrum error, sit beatae neque quisquam ullam molestiae dolore a! Deleniti maiores perferendis, porro omnis iure ducimus quia deserunt ea sunt illum eaque accusamus harum? Praesentium, assumenda.
+                    Sint laudantium earum aliquid voluptas deleniti exercitationem tempora nemo cupiditate minima ipsam culpa eius adipisci mollitia necessitatibus fugiat eligendi magni dolorum consequatur nesciunt doloremque, voluptatibus suscipit aspernatur eum reiciendis. Quas?
+                    Obcaecati doloremque sunt expedita debitis, laboriosam voluptatum, alias nobis placeat dolorem officia natus laborum suscipit quo fuga itaque quasi. Veniam, praesentium inventore architecto aliquam quam nihil iure esse facere libero.
+                    Quo temporibus error in esse! Corporis eveniet nisi ea tempora maxime delectus ratione iusto quod nam sit inventore quidem dolore accusantium, libero nostrum at voluptatum autem voluptates. Quas, delectus laboriosam!
+                    Adipisci, sapiente. Tempora quis cum impedit laudantium, perspiciatis totam necessitatibus excepturi sed illum animi reiciendis maxime quo officia minima facilis repellat doloremque iure. Magni harum porro laudantium, sit eius illo.                  
+                </div>
+            </div>
         </section>
 
         <section id="tooltip">

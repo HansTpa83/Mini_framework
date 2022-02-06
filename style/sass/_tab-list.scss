@@ -1,0 +1,39 @@
+.tab-list {
+    overflow: hidden;
+    display: flex;
+    list-style: none;
+    & li{
+        padding: .75rem.5rem;
+        display: block;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: #ffffff;
+        &:hover{
+            background-color: rgb(85, 85, 85);
+            color: white;
+            cursor: pointer;
+        }
+        & button{
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+        }
+    }
+
+}
+
+.tab-pane{
+    height: auto;
+}
+
+.tab-content {
+    background-color: rgb(85, 85, 85);
+    color: white;
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
