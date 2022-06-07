@@ -1,0 +1,9 @@
+@each $key, $value in $colors_value {
+    .text-#{$key}{
+        @if $key == "error"{
+            text-decoration: map-get($colors_value, $key);
+        } @else {
+            color:map-get($colors_value, $key);
+        }
+    }
+}

@@ -1,0 +1,33 @@
+/***** Alert *****/
+.alert{
+    position: relative;
+    padding: 0.75rem 1.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+button.close, button.popin-dismiss {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    opacity: .5;
+    border: none;
+    font-size: 1.2em;
+    &:hover{
+        opacity: 1;
+        font-weight: bold;
+    }
+}
+$i:0;
+@each $key, $value in $colors_value{
+    @if($key != "muted" or $key != "error"){
+        .alert-#{$key}{
+            color: map-get($colors_darken, #{$i});
+            background-color: $value#{60};
+        }
+    } 
+    $i: $i + 1;
+}
+

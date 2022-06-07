@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/sass/all/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script/alert.js" defer></script>
+    <script src="script/menu.js" defer></script>
+    <script src="script/modal.js" defer></script>
+    <script src="script/tab.js"></script>
+    <title>My Bootstrap</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="nav-item"><a>HOME</a></li>
+                <li class="nav-item">LINK</li>
+                <li class="nav-item dropdown" id="drop01">DROPDOWN 01<img src="img/down-arrow.png" alt="fleche vers le bas" class="dropdown-img"> 
+                    <div class="dropdown-menu" >
+                        <a href="" class="dropdown-item">Lorem ipsum dolor sit amet</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item">item02</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item">item03</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item">item04</a>
+                    </div>
+                </li> 
+                <li class="nav-item dropdown" id="drop02">DROPDOWN 02 <img src="img/down-arrow.png" alt="fleche vers le bas" class="dropdown-img">
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">Lorem ipsum dolor sit amet</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item">item02</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item">item03</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item">item04</a>
+                    </div>
+                </li> 
+                <li class="nav-form">
+                    <form>
+                        <input class="form-control btn btn-dark search" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container grille">
+            <h2>GRILLE</h2>
+            <h3>container</h3>
+            <div class="row">
+                <div class="bg-danger col-12">12</div>
+        
+                <div class="bg-warning col-11">11</div>
+        
+                <div class="bg-success col-10">10</div>
+        
+                <div class="bg-primary col-9">9</div>
+        
+                <div class="bg-secondary col-8">8</div>
+        
+                <div class="bg-light col-7">7</div>
+        
+                <div class="bg-dark col-6">6</div>
+                <div class="bg-warning col-6">6</div>
+        
+                <div class="bg-danger col-xs-5 col-sm-9 col-md-6 col-lg-8 col-xl-12">5</div>
+                <div class="bg-success col-xs-5 col-sm-3 col-md-6 col-lg-4 col-xl-12">5</div>
+                
+                <div class="bg-light col-4">4</div>
+                <div class="bg-secondary col-4">4</div>
+                <div class="bg-dark col-4">4</div>
+                
+                <div class="bg-warning col-3">3</div>
+                <div class="bg-primary col-3">3</div>
+                <div class="bg-success col-3">3</div>
+                <div class="bg-danger col-3">3</div>
+         
+        
+                <div class="bg-dark col-2">2</div>
+                <div class="bg-light col-2">2</div>
+                <div class="bg-danger col-2">2</div>
+                <div class="bg-warning col-2">2</div>
+                <div class="bg-info col-2">2</div>
+                <div class="bg-success col-2">2</div>
+                
+                <div class="bg-primary col-1">1</div>
+                <div class="bg-secondary col-1">1</div>
+                <div class="bg-success col-1">1</div>
+                <div class="bg-info col-1">1</div>
+                <div class="bg-warning col-1">1</div>
+                <div class="bg-danger col-1">1</div>
+                <div class="bg-light col-1">1</div>
+                <div class="bg-dark col-1">1</div>
+                <div class="bg-primary col-1">1</div>
+                <div class="bg-secondary col-1">1</div>
+                <div class="bg-success col-1">1</div>
+                <div class="bg-info col-1">1</div>
+            </div>
+        </section>
+    
+        <section class="container-fluid grille">
+            <h3>container-fluid</h3>
+            <div class="row">
+                <div class="bg-danger col-12">12</div>
+        
+                <div class="bg-warning col-11">11</div>
+        
+                <div class="bg-success col-10">10</div>
+        
+                <div class="bg-primary col-9">9</div>
+        
+                <div class="bg-secondary col-8">8</div>
+        
+                <div class="bg-light col-7">7</div>
+        
+                <div class="bg-dark col-6">6</div>
+                <div class="bg-warning col-6">6</div>
+        
+                <div class="bg-danger col-xs-5 col-sm-9 col-md-6 col-lg-8 col-xl-12">5</div>
+                <div class="bg-success col-xs-5 col-sm-3 col-md-6 col-lg-4 col-xl-12">5</div>
+                
+                <div class="bg-light col-4">4</div>
+                <div class="bg-secondary col-4">4</div>
+                <div class="bg-dark col-4">4</div>
+                
+                <div class="bg-warning col-3">3</div>
+                <div class="bg-primary col-3">3</div>
+                <div class="bg-success col-3">3</div>
+                <div class="bg-danger col-3">3</div>
+        
+                <div class="bg-dark col-2">2</div>
+                <div class="bg-light col-2">2</div>
+                <div class="bg-danger col-2">2</div>
+                <div class="bg-warning col-2">2</div>
+                <div class="bg-info col-2">2</div>
+                <div class="bg-success col-2">2</div>
+                
+                <div class="bg-primary col-1">1</div>
+                <div class="bg-secondary col-1">1</div>
+                <div class="bg-success col-1">1</div>
+                <div class="bg-info col-1">1</div>
+                <div class="bg-warning col-1">1</div>
+                <div class="bg-danger col-1">1</div>
+                <div class="bg-light col-1">1</div>
+                <div class="bg-dark col-1">1</div>
+                <div class="bg-primary col-1">1</div>
+                <div class="bg-secondary col-1">1</div>
+                <div class="bg-success col-1">1</div>
+                <div class="bg-info col-1">1</div>
+            </div>
+        </section>
+    
+        <section class="container-fluid" id="sec-btn">
+            <h2>BOUTON</h2>
+            <div class="row justify">
+                <div>
+                    <button class="btn btn-primary">Primary</button>
+                </div>
+                <div>
+                    <button class="btn btn-secondary">Secondary</button>
+                </div>
+                <div>
+                    <button class="btn btn-success">Success</button>
+                </div>
+                <div>
+                    <button class="btn btn-info">Info</button>
+                </div>
+                <div>
+                    <button class="btn btn-warning">warning</button>
+                </div>
+                <div>
+                    <button class="btn btn-danger">Danger</button>
+                </div>
+                <div>
+                    <button class="btn btn-light">Light</button>
+                </div>
+                <div>
+                    <button class="btn btn-dark">Dark</button>
+                </div>
+            </div>
+            <div class="row my">
+                <div>
+                    <input type="button" class="btn btn-warning" value="Warning">
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-danger" value="Danger">
+                </div>
+                <div>
+                    <input type="reset" class="btn btn-primary" value="Primary">
+                </div>
+            </div>
+            <div class="row my">
+                <div>
+                    <button class="btn btn-sm btn-success">Small</button>
+                </div>
+                <div>
+                    <button class="btn btn-lg btn-primary">Large</button>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-lg btn-light">
+                </div>
+                <div>
+                    <input type="reset" class="btn btn-sm btn-danger">
+                </div>
+            </div>
+            <div class="row my">
+                <div>
+                    <button class="btn btn-sm btn-success disabled">Small</button>
+                </div>
+                <div>
+                    <button class="btn btn-lg btn-primary disabled">Large</button>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-lg btn-light" disabled>
+                </div>
+                <div>
+                    <input type="reset" class="btn btn-sm btn-danger" disabled>
+                </div>
+            </div>
+        </section>
+    
+        <section class="container-fluid" id="sect_img">
+            <h2>IMAGES</h2>
+            <div class="row">
+                <div class="col-6">
+                    <img src="img/img_chat.jpg" alt="chat avec des lunettes" class="img-responsive img-rounded">
+                </div>
+                <div class="col-6">
+                    <img src="img/img_chat.jpg" alt="chat avec des lunettes" class="img-responsive img-circle">
+                </div>
+                <div class="col-6">
+                    <img src="img/img_chat.jpg" alt="chat avec des lunettes" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-6">
+                    <img src="img/img_chat.jpg" alt="chat avec des lunettes" class="img-responsive img-blur">
+                </div>
+            </div>
+        </section>
+    
+        <section class="container">
+            <h2>TEXT COLOR</h2>
+            <p class="text-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore eum velit nisi quas, doloribus necessitatibus iste, reiciendis quae optio ipsa aperiam sequi adipisci nostrum obcaecati molestiae eius quos vero.
+            </p>
+            <p class="text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptates non, velit quam laboriosam eveniet libero perspiciatis dicta, tempora vitae unde tempore id quidem delectus officiis placeat aliquam obcaecati explicabo?
+            </p>
+            <p class="text-success">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat praesentium nam accusantium et assumenda, eaque voluptatum non vero eligendi repellat tempora ad. Possimus ut adipisci aliquam ea repellat aliquid accusantium.
+            </p>
+            <p class="text-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae commodi, vel deserunt nobis nisi laborum optio expedita consequatur placeat modi harum? Id distinctio beatae, incidunt eaque vel maxime. Quis, doloremque?
+            </p>
+            <p class="text-warning">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque accusamus accusantium, tempore cupiditate ea, incidunt iste, quidem maiores perferendis nobis. Eveniet magni, eligendi iste deleniti vitae fugit accusamus et.
+            </p>
+            <p class="text-danger">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, sapiente. Vel enim, id quod, soluta, nostrum obcaecati vero iste ratione quo voluptas assumenda maiores exercitationem voluptatem laboriosam illum labore? Quasi.
+            </p>
+            <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quibusdam impedit quasi. Voluptatem tempora maxime atque error nemo tempore molestiae autem exercitationem? Quae assumenda voluptates exercitationem explicabo quo sit aspernatur.
+            </p>
+            <p class="text-light text-error">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maxime repudiandae quaerat laborum vero eum? Accusamus nihil vitae similique magnam dolores, optio maxime provident tenetur doloribus voluptas neque mollitia molestias.
+            </p>
+        </section>
+    
+        <section class="container-fluid" id="bg">
+            <h2>BACKGROUND COLOR</h2>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-1 bg-primary"></div>
+                <div class="col-1 bg-secondary"></div>
+                <div class="col-1 bg-success"></div>
+                <div class="col-1 bg-info"></div>
+                <div class="col-1 bg-warning"></div>
+                <div class="col-1 bg-danger"></div>
+                <div class="col-1 bg-light"></div>
+                <div class="col-1 bg-dark"></div>
+            </div>
+        </section>
+    
+        <section class="container">
+            <h2>ALERT</h2>
+            <input type="reset" value="reset" class="btn btn-danger reset" >
+            <div class="justify">
+                <div class="my">
+                    <button class="btn btn-primary btn-alert">Primary</button>
+                </div>
+                <div class="my">
+                    <button class="btn btn-secondary btn-alert">Secondary</button>
+                </div>
+                <div class="my">
+                    <button class="btn btn-success btn-alert">Success</button>
+                </div>
+                <div class="my">
+                    <button class="btn btn-info btn-alert">Info</button>
+                </div>
+                <div class="my">
+                    <button class="btn btn-warning btn-alert">warning</button>
+                </div>
+                <div class="my">
+                    <button class="btn btn-danger btn-alert">Danger</button>
+                </div>
+                <div class="my">
+                    <button class="btn btn-light btn-alert">Light</button>
+                </div>
+                <div class="my">
+                    <button class="btn btn-dark btn-alert" title="lol">Dark</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="container">
+            <h2>Visibilité</h2>
+            <div class="col-12 bg-danger visible-print hidden-xl">XL</div>
+            <div class="col-12 bg-success hidden-xs hidden-sm hidden-md hidden-lg visible-xl">LG</div>
+            <div class="col-12 bg-light hidden-md">MD</div>
+            <div class="col-12 bg-warning hidden-sm">SM</div>
+            <div class="col-12 bg-dark hidden-xs">XS</div>
+            <div class="col-12 bg-secondary hidden-print">Print hidden</div>
+            <div class="col-12 bg-secondary visible-print">Print visible</div>
+        </section>
+
+        <section>
+            <h2>MODAL</h2>
+            <div class="btn btn-danger btn-modal" data-target="modal1">MODAL TEXT</div>
+            <div class="modal" id="modal1">
+                <div class="modal-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Tempora recusandae sit deleniti minus reiciendis excepturi 
+                    eaque sed repudiandae eius voluptas provident quibusdam 
+                    accusamus, adipisci aperiam aliquid neque temporibus 
+                    necessitatibus sapiente? 01
+                    <button class="popin-dismiss">X</button>
+                </div>
+            </div>
+
+            <div class="btn btn-primary btn-modal" data-target="modal2">MODAL GRILLE</div>
+            <div class="modal" id="modal2">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="bg-primary col-1">1</div>
+                        <div class="bg-secondary col-2">2</div>
+                        <div class="bg-success col-3">3</div>
+                        <div class="bg-info col-4">4</div>
+                        <div class="bg-warning col-5">5</div>
+                        <div class="bg-danger col-6">6</div>
+                        <div class="bg-info col-7">7</div>
+                        <div class="bg-dark col-8">8</div>
+                        <div class="bg-primary col-9">9</div>
+                        <div class="bg-secondary col-10">10</div>
+                        <div class="bg-success col-11">11</div>
+                        <div class="bg-info col-12">12</div>
+                    </div>
+                    <button class="popin-dismiss">X</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="za">POPINS</h2>
+            <ul class="tab-list">
+                <li data-target="item01">item01</li>
+                <li data-target="item02">item02</li>
+                <li data-target="item03">item03</li>
+            </ul>
+
+            <div class="tab-pane">
+                <div class="tab-content" id="item01">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi culpa impedit ex et cumque commodi consectetur vitae sed! Doloribus odit veritatis, debitis eveniet facere atque consequatur eum amet nam beatae?
+                </div>
+                <div class="tab-content" id="item02">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit facere dolorem, maiores enim eligendi corporis explicabo esse repellat quod? Rerum quasi quam quaerat enim repellendus totam fugiat harum dicta?
+                    Sunt doloremque, deserunt, ut perspiciatis quis suscipit aut autem molestiae beatae fuga doloribus consectetur animi distinctio aperiam recusandae voluptatem voluptatibus! Eum eligendi possimus inventore culpa consectetur libero vitae delectus ut.
+                    Quos, culpa, facere, maxime quis dolore sapiente quod doloremque aspernatur itaque molestiae quasi sequi voluptate pariatur minus corrupti id sint facilis ratione ullam exercitationem. Praesentium temporibus quod explicabo vel repudiandae.                    
+                </div>
+                <div class="tab-content" id="item03">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic veniam, nulla, earum cum assumenda voluptate non et vero molestias magni ea totam. Ad ducimus rem eos, consectetur perferendis officia debitis!
+                    Distinctio deleniti iste maiores magni, aliquid perspiciatis dignissimos animi excepturi quam, esse cupiditate quia. Temporibus eius eum magni nam est. Quibusdam, dolorem eos! Repellendus, a nostrum iure fugit enim consequatur.
+                    Officia commodi, unde exercitationem delectus et assumenda quos reprehenderit, eaque, excepturi similique vel quaerat. Praesentium temporibus iusto quas, cum, laboriosam recusandae cupiditate, aut tempore dolorum dolor obcaecati vero id necessitatibus?
+                    Cupiditate impedit totam, voluptatem fugiat, nihil in officiis nemo suscipit saepe laborum eius odio iure nobis accusamus illo eveniet temporibus minus rem mollitia ipsam sed incidunt officia, doloribus maxime! Rem.
+                    Perferendis earum, officiis, nostrum error, sit beatae neque quisquam ullam molestiae dolore a! Deleniti maiores perferendis, porro omnis iure ducimus quia deserunt ea sunt illum eaque accusamus harum? Praesentium, assumenda.
+                    Sint laudantium earum aliquid voluptas deleniti exercitationem tempora nemo cupiditate minima ipsam culpa eius adipisci mollitia necessitatibus fugiat eligendi magni dolorum consequatur nesciunt doloremque, voluptatibus suscipit aspernatur eum reiciendis. Quas?
+                    Obcaecati doloremque sunt expedita debitis, laboriosam voluptatum, alias nobis placeat dolorem officia natus laborum suscipit quo fuga itaque quasi. Veniam, praesentium inventore architecto aliquam quam nihil iure esse facere libero.
+                    Quo temporibus error in esse! Corporis eveniet nisi ea tempora maxime delectus ratione iusto quod nam sit inventore quidem dolore accusantium, libero nostrum at voluptatum autem voluptates. Quas, delectus laboriosam!
+                    Adipisci, sapiente. Tempora quis cum impedit laudantium, perspiciatis totam necessitatibus excepturi sed illum animi reiciendis maxime quo officia minima facilis repellat doloremque iure. Magni harum porro laudantium, sit eius illo.                  
+                </div>
+            </div>
+        </section>
+
+        <section id="tooltip">
+            <h2>TOOLTIP</h2>
+            <div class="my">
+                <button class="btn btn-success tooltip" data-placement="top" title="top">tooltip top</button>
+            </div>
+            <div class="my">
+                <button class="btn btn-primary tooltip" data-placement="right" title="right">tooltip right</button>
+            </div>
+            <div class="my">
+                <button class="btn btn-warning tooltip" data-placement="left" title="left">tooltip left</button>
+            </div>
+            <div class="my">
+                <button class="btn btn-danger tooltip" data-placement="bottom" title="bottom">tooltip bottom</button>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+</html>

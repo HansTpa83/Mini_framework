@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+.navbar{
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    user-select: none;
+    background: #f8f9fa
+}
+.nav-item{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: $gray-600;
+    &:hover{
+        color: $gray-800;
+    }
+}
+
+.nav-link{
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.nav-form{
+    margin-left: auto;
+    padding: 0.5rem;
+}
+form > input, form > button, form > label{
+    margin: 0 .3rem;
+}
+.search::placeholder{
+    color: $gray-800;
+    text-align: left;
+    &:hover, &:focus, &:active{
+        background-color: white!important;
+        color: white;
+    }
+}
+
+/***** FORM NAV *****/
+.form-inline{
+    display: flex;
+    justify-content: left;
+}
+
+/***** DROPDOWN *****/
+.dropdown-img{
+    width: 10px;
+}
+.dropdown{
+    &:hover{
+        cursor: pointer;
+    }
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    border: 1px solid rgba(0,0,0,.15);
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+    background: white;
+    z-index: 1;   
+}
+.dropdown-item{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    color: #212529;
+    white-space: nowrap;
+    clear: both;
+
+    &:hover{
+        background-color: rgb(214, 214, 214);
+    }
+}
+.dropdown-divider{
+    height: 0;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #7c7c7c;
+}
